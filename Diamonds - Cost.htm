@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0022)http://127.0.0.1:6693/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<SCRIPT type="application/shiny-singletons"></SCRIPT>
+   
+<SCRIPT type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.3.2];selectize[0.11.2];ionrangeslider[2.1.6];strftime[0.9.2];bootstrap[3.3.7]</SCRIPT>
+ 
+<SCRIPT src="Diamonds%20-%20Cost_files/json2-min.js"></SCRIPT>
+ 
+<SCRIPT src="Diamonds%20-%20Cost_files/jquery.min.js"></SCRIPT>
+ <LINK href="Diamonds%20-%20Cost_files/shiny.css" rel="stylesheet"> 
+<SCRIPT src="Diamonds%20-%20Cost_files/shiny.min.js"></SCRIPT>
+ <LINK href="Diamonds%20-%20Cost_files/selectize.bootstrap3.css" rel="stylesheet"> <!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]--> 
+<SCRIPT src="Diamonds%20-%20Cost_files/selectize.min.js"></SCRIPT>
+ <LINK href="Diamonds%20-%20Cost_files/ion.rangeSlider.css" rel="stylesheet"> 
+<LINK href="Diamonds%20-%20Cost_files/ion.rangeSlider.skinShiny.css" rel="stylesheet"> 
+<SCRIPT src="Diamonds%20-%20Cost_files/ion.rangeSlider.min.js"></SCRIPT>
+ 
+<SCRIPT src="Diamonds%20-%20Cost_files/strftime-min.js"></SCRIPT>
+ 
+<META name="viewport" content="width=device-width, initial-scale=1"> <LINK href="Diamonds%20-%20Cost_files/bootstrap.min.css" 
+rel="stylesheet"> 
+<SCRIPT src="Diamonds%20-%20Cost_files/bootstrap.min.js"></SCRIPT>
+ 
+<SCRIPT src="Diamonds%20-%20Cost_files/html5shiv.min.js"></SCRIPT>
+ 
+<SCRIPT src="Diamonds%20-%20Cost_files/respond.min.js"></SCRIPT>
+  <TITLE>Diamonds - Cost depends on Carat, Cut, Color, and Clarity</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.19355"></HEAD> 
+<BODY>
+<DIV class="container-fluid">
+<H2>Diamonds - Cost depends on Carat, Cut, Color, and Clarity</H2>
+<DIV class="row">
+<DIV class="col-sm-4">
+<FORM class="well">
+<H4>Choose Diamond Factors</H4>
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="cut">Cut</LABEL> 
+            
+<DIV><SELECT id="cut"><OPTION value="Ideal" selected="">Ideal</OPTION> <OPTION 
+  value="Premium">Premium</OPTION> <OPTION value="Very Good">Very Good</OPTION> 
+  <OPTION value="Good">Good</OPTION> <OPTION value="Fair">Fair</OPTION></SELECT>   
+            
+<SCRIPT type="application/json" data-nonempty="" data-for="cut">{}</SCRIPT>
+             </DIV></DIV>
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="color">Color</LABEL> 
+            
+<DIV><SELECT id="color"><OPTION value="D" selected="">D</OPTION> <OPTION 
+  value="E">E</OPTION> <OPTION value="F">F</OPTION> <OPTION value="G">G</OPTION> 
+  <OPTION value="H">H</OPTION> <OPTION value="I">I</OPTION> <OPTION 
+  value="J">J</OPTION></SELECT>               
+<SCRIPT type="application/json" data-nonempty="" data-for="color">{}</SCRIPT>
+             </DIV></DIV>
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="clarity">Clarity</LABEL> 
+            
+<DIV><SELECT id="clarity"><OPTION value="IF" selected="">IF</OPTION> <OPTION 
+  value="VVS1">VVS1</OPTION> <OPTION value="VVS2">VVS2</OPTION> <OPTION value="VS1">VS1</OPTION> 
+  <OPTION value="VS2">VS2</OPTION> <OPTION value="SI1">SI1</OPTION> <OPTION 
+  value="SI2">SI2</OPTION> <OPTION value="I1">I1</OPTION></SELECT>               
+<SCRIPT type="application/json" data-nonempty="" data-for="clarity">{}</SCRIPT>
+             </DIV></DIV>
+<DIV class="form-group shiny-input-container"><LABEL class="control-label" for="lm">Carat</LABEL> 
+            
+<INPUT class="js-range-slider" id="lm" data-data-type="number" data-keyboard="true" data-prettify-enabled="true" data-prettify-separator="," data-grid-snap="false" data-grid-num="9.62" data-grid="true" data-step="0.1" data-from="2.505" data-max="5.01" data-min="0.2"> 
+          </DIV>
+<H4>Predicted Price</H4>
+<PRE class="shiny-text-output noplaceholder" id="predict"></PRE></FORM></DIV>
+<DIV class="col-sm-8">        Price/Carat Relationship         
+<DIV class="shiny-plot-output" id="distPlot" 
+style="width: 100%; height: 400px;"></DIV></DIV></DIV></DIV></BODY></HTML>
